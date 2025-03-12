@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Radio Madhoshi - The most romantic Bollywood playlist playing 24/7. Drunk in Love all day. Tune in for soulful melodies - रेडियो मदहोशी - ریڈیو مدہوشی">
+    <meta name="keywords" content="Radio Madhoshi, Radio, Bollywood, Best Romantic Playlist, Hindi Music, 24/7 Music, Non-Profit Radio,  101 FM, Radio Madhoshi 101 FM, Bollywood romantic music, online Hindi radio, 24/7 romantic songs, Radio Madhoshi playlist">
+    <meta property="og:title" content="Radio Madhoshi - Drunk in Love all day">
+    <meta property="og:description" content="Presenting the most romantic Bollywood playlist that ever existed. Enjoy 24/7 romantic bollywood songs and feel the love with Radio Madhoshi.">
+    <meta property="og:image" content="https://i.imgur.com/A63NmLk.png">
+    <meta property="og:url" content="https://radiomadhoshi.vercel.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Radio Madhoshi - Drunk in Love all day - रेडियो मदहोशी - ریڈیو مدہوشی </title>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "RadioStation",
+        "name": "Radio Madhoshi",
+        "url": "https://radiomadhoshi.vercel.app",
+        "description": "Non-stop romantic Bollywood songs 24/7.",
+        "logo": "https://i.imgur.com/dtKLCBj.png",
+        "sameAs": ["https://facebook.com/RadioMadhoshi", "https://instagram.com/RadioMadhoshi"]
+      }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Martel:wght@300;400;700&family=Gulzar&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <link rel="icon" href="https://i.imgur.com/A63NmLk.png" type="image/x-icon" alt="radio">
+    <style>
+      /* Header Styles */
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #fbeaea;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header img {
+        max-width: 155px;
+      }
+
+      /* Intro Section */
+      .intro {
+        background-color: #f8f9fa;
+        padding: 3rem 0;
+      }
+
+      .intro h2 {
+        font-family: 'Noto Nastaliq Urdu', serif;
+        font-size: 2rem;
+        color: #007bff;
+      }
+
+      .intro p {
+        font-size: 1.3rem;
+        color: #555;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: url() no-repeat center center/cover;
+        color: #fff;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+
+      .btn-danger {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+      }
+
+      /* About, Announcement, Contact Sections */
+      .about h2,
+      .announcements h2,
+      .contact h2 {
+        color: #ff5e5e;
+      }
+
+      .disclaimer {
+        padding: 2.4rem;
+        text-align: center;
+        font-size: 1rem;
+        color: #333;
+      }
+
+      /* Hindi Urdu Station Name */
+      .station-name {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 18px;
+        margin-bottom: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* Adds spacing between Hindi and Urdu */
+      }
+
+      .station-name .hindi {
+        font-family: 'Martel', serif;
+        color: #ff5e5e;
+        /* Romantic red tone matching your logo */
+      }
+
+      .station-name .separator {
+        font-family: 'Great Vibes', cursive;
+        color: #ff5e5e;
+        font-size: 1.3rem;
+      }
+
+      .station-name .urdu {
+        font-family: 'Gulzar', serif;
+        color: #ff5e5e;
+        /* Same romantic tone */
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 15px 0;
+        text-align: center;
+      }
+
+      footer a {
+        color: #ff5e5e;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      /* Audio Player Section */
+      .audio-player {
+        text-align: center;
+        padding: 3rem 0;
+      }
+
+      .audio-player audio {
+        width: 100%;
+        max-width: 400px;
+        border: 2px solid #007bff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #metadata {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #007bff;
+      }
+
+      /* .audio-player audio {
+            width: 100%;
+            max-width: 400px;
+        } */
+      .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <img src="https://i.imgur.com/dtKLCBj.png" alt="Radio Madhoshi Logo">
+      <div class="station-name">
+        <span class="hindi">रेडियो मदहोशी</span>
+        <span class="separator">💞</span>
+        <span class="urdu">ریڈیو مدہوشی</span>
+      </div>
+      <h1>Radio Madhoshi</h1>
+      <p>Drunk in Love all day</p>
+    </header>
+    <!-- Intro Section -->
+    <section class="intro text-center">
+      <div class="container">
+        <h2> محبت کا سفر</h2>
+        <p>Presenting the most romantic Bollywood playlist that ever existed.</p>
+      </div>
+    </section>
+    <!-- Hero Section -->
+    <section class="hero text-white">
+      <div class="container">
+        <h1>Feel the Love 24/7</h1>
+        <button class="btn btn-danger mt-3" onclick="document.querySelector('audio').play()">Listen Now</button>
+      </div>
+    </section>
+    <!-- Audio Player Section -->
+    <section class="audio-player bg-light">
+      <div class="container">
+        <h2>Now Streaming</h2>
+        <!-- Metadata Display -->
+        <div id="metadata">Fetching song details...</div>
+        <!-- Audio Player -->
+        <audio controls>
+          <source src="https://stream.zeno.fm/7rsl8fsccf8uv" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+        <p class="mt-2">Enjoy the best romantic Bollywood songs!</p>
+      </div>
+    </section>
+    <!-- Audio Player Section -->
+    <!--<section class="audio-player py-5 text-center"><h2>Now Streaming</h2><audio controls autoplay><source src="https://stream.zeno.fm/7rsl8fsccf8uv" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio><p class="mt-2">Enjoy the best romantic Bollywood songs!</p></section> -->
+    <!-- About Section -->
+    <section class="about py-5 bg-light text-center">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Radio Madhoshi, your ultimate destination for the most romantic Bollywood songs, playing 24/7. With our tagline, “Drunk in Love all day,” we curate the most soulful and timeless playlists that celebrate love in its purest form. Experience Bollywood-style romance—only on Radio Madhoshi!</p>
+      </div>
+    </section>
+    <!-- Announcements Section -->
+    <section class="announcements py-5 text-center">
+      <div class="container">
+        <h2>Announcements</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card p-4">
+              <h3>Valentine's Day Special</h3>
+              <p>Join us at 6 PM for a magical love-filled playlist!</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card p-4">
+              <h3>Request Your Song</h3>
+              <p>Submit your favorite Bollywood romantic songs now!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact py-5 bg-light text-center">
+      <div class="container">
+        <h2> Request / Suggestion </h2>
+        <form id="contactForm" onsubmit="openEmail(event)">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <input type="text" id="userName" class="form-control mb-3" placeholder="Your Name" required>
+              <input type="text" id="userSubject" class="form-control mb-3" placeholder="Subject" required>
+              <textarea id="userMessage" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+              <button class="btn btn-danger px-4" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Disclaimer -->
+    <section class="disclaimer">
+      <p>Dear Listeners, Radio Madhoshi is a passion project and will always remain non-profit as well as commercial-free. The adverts you occasionally hear are part of the broadcasting platform's support structure. We truly appreciate your understanding and continued support!</p>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Radio Madhoshi | All Rights Reserved</p>
+      <div>
+        <a href="https://facebook.com/RadioMadhoshi" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-twitter"></i> Twitter </a>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Email Script -->
+    <script>
+      function openEmail(event) {
+        event.preventDefault(); // Prevents the form from submitting traditionally
+        // Fetch user input values
+        const userName = document.getElementById("userName").value;
+        const userSubject = document.getElementById("userSubject").value;
+        const userMessage = document.getElementById("userMessage").value;
+        // Format the email content
+        const emailTo = "radiomadhoshi@gmail.com";
+        const subject = encodeURIComponent(userSubject);
+        const body = encodeURIComponent(`Message from: ${userName}\n\n${userMessage}`);
+        // Open default email app with prefilled values
+        window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
+      }
+    </script>
+    <!-- Metadata Fetching Script -->
+    <script>
+      async function fetchMetadata() {
+        const streamURL = "https://stream.zeno.fm/7rsl8fsccf8uv";
+        const metadataElement = document.getElementById("metadata");
+        try {
+          // Fetch metadata headers
+          const response = await fetch(streamURL, {
+            method: "GET",
+            headers: {
+              "Icy-Metadata": "1"
+            }
+          });
+          const icyMetadata = response.headers.get("icy-metaint");
+          if (icyMetadata) {
+            metadataElement.innerText = "Now Playing: " + icyMetadata;
+          } else {
+            metadataElement.innerText = "Streaming live, but no metadata available.";
+          }
+        } catch (error) {
+          metadataElement.innerText = "Error fetching song details.";
+          console.error("Error fetching metadata:", error);
+        }
+      }
+      // Run fetchMetadata every 15 seconds
+      fetchMetadata();
+      setInterval(fetchMetadata, 15000);
+    </script>
+  </body>
+  </html>
