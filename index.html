@@ -1,333 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Radio Madhoshi - The most romantic Bollywood playlist playing 24/7. Drunk in Love all day. Tune in for soulful melodies - रेडियो मदहोशी - ریڈیو مدہوشی">
-    <meta name="keywords" content="Radio Madhoshi, Radio, Bollywood, Best Romantic Playlist, Hindi Music, 24/7 Music, Non-Profit Radio,  101 FM, Radio Madhoshi 101 FM, Bollywood romantic music, online Hindi radio, 24/7 romantic songs, Radio Madhoshi playlist">
-    <meta property="og:title" content="Radio Madhoshi - Drunk in Love all day">
-    <meta property="og:description" content="Presenting the most romantic Bollywood playlist that ever existed. Enjoy 24/7 romantic bollywood songs and feel the love with Radio Madhoshi.">
+    
+    <title>Radio Madhoshi - Most Romantic Bollywood Playlist & Best Hindi Love Songs - Durnk in Love all Day!</title>
+    <meta name="description" content="Radio Madhoshi is the best Bollywood romantic playlist playing 24/7. Tune in for the most romantic Bollywood playlist that ever existed, featuring best love song playlists, top Hindi playlists, and soulful classic tracks without commercials.">
+    <meta name="keywords" content="Bollywood Romantic Playlist, Most Romantic Bollywood Playlist, Best Bollywood Playlist, Best Love Song Playlist, Best Hindi Playlist, Best Bollywood Love Playlist, Radio Madhoshi, Hindi Romantic Radio, 24/7 Bollywood Love Songs, Online Hindi Radio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://madhoshi.vercel.app">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://madhoshi.vercel.app">
+    <meta property="og:title" content="Radio Madhoshi - Most Romantic Bollywood Playlist & Best Love Songs">
+    <meta property="og:description" content="Stream the most romantic Bollywood playlist that ever existed. Enjoy 24/7 Hindi love songs, top romantic playlists, and pure emotional melodies on Radio Madhoshi.">
     <meta property="og:image" content="https://i.imgur.com/A63NmLk.png">
-    <meta property="og:url" content="https://radiomadhoshi.vercel.app/">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Radio Madhoshi - Drunk in Love all day - रेडियो मदहोशी - ریڈیو مدہوشی </title>
-    <!-- Structured Data -->
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://madhoshi.vercel.app">
+    <meta property="twitter:title" content="Radio Madhoshi - Most Romantic Bollywood Playlist">
+    <meta property="twitter:description" content="Listen to the best Bollywood love playlist online 24/7. Your ultimate hub for premium Hindi love song playlists.">
+    <meta property="twitter:image" content="https://i.imgur.com/A63NmLk.png">
+    
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "RadioStation",
-        "name": "Radio Madhoshi",
-        "url": "https://radiomadhoshi.vercel.app",
-        "description": "Non-stop romantic Bollywood songs 24/7.",
-        "logo": "https://i.imgur.com/dtKLCBj.png",
-        "sameAs": ["https://facebook.com/RadioMadhoshi", "https://instagram.com/RadioMadhoshi"]
-      }
-    </script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Martel:wght@300;400;700&family=Gulzar&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- Favicon -->
-    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
-    <link rel="icon" href="https://i.imgur.com/A63NmLk.png" type="image/x-icon" alt="radio">
-    <style>
-      /* Header Styles */
-      body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        background-color: #fbeaea;
-        text-align: center;
-        padding: 20px 0;
-      }
-
-      header img {
-        max-width: 155px;
-      }
-
-      /* Intro Section */
-      .intro {
-        background-color: #f8f9fa;
-        padding: 3rem 0;
-      }
-
-      .intro h2 {
-        font-family: 'Noto Nastaliq Urdu', serif;
-        font-size: 2rem;
-        color: #007bff;
-      }
-
-      .intro p {
-        font-size: 1.3rem;
-        color: #555;
-      }
-
-      /* Hero Section */
-      .hero {
-        background: url() no-repeat center center/cover;
-        color: #fff;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-
-      .hero h1 {
-        font-size: 2.5rem;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-      }
-
-      .btn-danger {
-        padding: 10px 20px;
-        font-size: 1.2rem;
-      }
-
-      /* About, Announcement, Contact Sections */
-      .about h2,
-      .announcements h2,
-      .contact h2 {
-        color: #ff5e5e;
-      }
-
-      .disclaimer {
-        padding: 2.4rem;
-        text-align: center;
-        font-size: 1rem;
-        color: #333;
-      }
-
-      /* Hindi Urdu Station Name */
-      .station-name {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-top: 18px;
-        margin-bottom: 9px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        /* Adds spacing between Hindi and Urdu */
-      }
-
-      .station-name .hindi {
-        font-family: 'Martel', serif;
-        color: #ff5e5e;
-        /* Romantic red tone matching your logo */
-      }
-
-      .station-name .separator {
-        font-family: 'Great Vibes', cursive;
-        color: #ff5e5e;
-        font-size: 1.3rem;
-      }
-
-      .station-name .urdu {
-        font-family: 'Gulzar', serif;
-        color: #ff5e5e;
-        /* Same romantic tone */
-      }
-
-      /* Footer */
-      footer {
-        background-color: #333;
-        color: #fff;
-        padding: 15px 0;
-        text-align: center;
-      }
-
-      footer a {
-        color: #ff5e5e;
-        margin: 0 10px;
-        text-decoration: none;
-      }
-
-      /* Audio Player Section */
-      .audio-player {
-        text-align: center;
-        padding: 3rem 0;
-      }
-
-      .audio-player audio {
-        width: 100%;
-        max-width: 400px;
-        border: 2px solid #007bff;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      #metadata {
-        font-size: 1.3rem;
-        margin-bottom: 10px;
-        font-weight: bold;
-        color: #007bff;
-      }
-
-      /* .audio-player audio {
-            width: 100%;
-            max-width: 400px;
-        } */
-      .card {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        border: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <img src="https://i.imgur.com/dtKLCBj.png" alt="Radio Madhoshi Logo">
-      <div class="station-name">
-        <span class="hindi">रेडियो मदहोशी</span>
-        <span class="separator">💞</span>
-        <span class="urdu">ریڈیو مدہوشی</span>
-      </div>
-      <h1>Radio Madhoshi</h1>
-      <p>Drunk in Love all day</p>
-    </header>
-    <!-- Intro Section -->
-    <section class="intro text-center">
-      <div class="container">
-        <h2> محبت کا سفر</h2>
-        <p>Presenting the most romantic Bollywood playlist that ever existed.</p>
-      </div>
-    </section>
-    <!-- Hero Section -->
-    <section class="hero text-white">
-      <div class="container">
-        <h1>Feel the Love 24/7</h1>
-        <button class="btn btn-danger mt-3" onclick="document.querySelector('audio').play()">Listen Now</button>
-      </div>
-    </section>
-    <!-- Audio Player Section -->
-    <section class="audio-player bg-light">
-      <div class="container">
-        <h2>Now Streaming</h2>
-        <!-- Metadata Display -->
-        <div id="metadata">Fetching song details...</div>
-        <!-- Audio Player -->
-        <audio controls>
-          <source src="https://stream.zeno.fm/7rsl8fsccf8uv" type="audio/mpeg"> Your browser does not support the audio element.
-        </audio>
-        <p class="mt-2">Enjoy the best romantic Bollywood songs!</p>
-      </div>
-    </section>
-    <!-- Audio Player Section -->
-    <!--<section class="audio-player py-5 text-center"><h2>Now Streaming</h2><audio controls autoplay><source src="https://stream.zeno.fm/7rsl8fsccf8uv" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio><p class="mt-2">Enjoy the best romantic Bollywood songs!</p></section> -->
-    <!-- About Section -->
-    <section class="about py-5 bg-light text-center">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>Welcome to Radio Madhoshi, your ultimate destination for the most romantic Bollywood songs, playing 24/7. With our tagline, “Drunk in Love all day,” we curate the most soulful and timeless playlists that celebrate love in its purest form. Experience Bollywood-style romance—only on Radio Madhoshi!</p>
-      </div>
-    </section>
-    <!-- Announcements Section -->
-    <section class="announcements py-5 text-center">
-      <div class="container">
-        <h2>Announcements</h2>
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card p-4">
-              <h3>Valentine's Day Special</h3>
-              <p>Join us at 6 PM for a magical love-filled playlist!</p>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="card p-4">
-              <h3>Request Your Song</h3>
-              <p>Submit your favorite Bollywood romantic songs now!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Section -->
-    <section class="contact py-5 bg-light text-center">
-      <div class="container">
-        <h2> Request / Suggestion </h2>
-        <form id="contactForm" onsubmit="openEmail(event)">
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <input type="text" id="userName" class="form-control mb-3" placeholder="Your Name" required>
-              <input type="text" id="userSubject" class="form-control mb-3" placeholder="Subject" required>
-              <textarea id="userMessage" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
-              <button class="btn btn-danger px-4" type="submit">Send</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- Disclaimer -->
-    <section class="disclaimer">
-      <p>Dear Listeners, Radio Madhoshi is a passion project and will always remain non-profit as well as commercial-free. The adverts you occasionally hear are part of the broadcasting platform's support structure. We truly appreciate your understanding and continued support!</p>
-    </section>
-    <!-- Footer -->
-    <footer>
-      <p>© 2025 Radio Madhoshi | All Rights Reserved</p>
-      <div>
-        <a href="https://facebook.com/RadioMadhoshi" target="_blank">
-          <i class="fab fa-facebook"></i> Facebook </a>
-        <a href="#" target="_blank">
-          <i class="fab fa-instagram"></i> Instagram </a>
-        <a href="#" target="_blank">
-          <i class="fab fa-twitter"></i> Twitter </a>
-      </div>
-    </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Email Script -->
-    <script>
-      function openEmail(event) {
-        event.preventDefault(); // Prevents the form from submitting traditionally
-        // Fetch user input values
-        const userName = document.getElementById("userName").value;
-        const userSubject = document.getElementById("userSubject").value;
-        const userMessage = document.getElementById("userMessage").value;
-        // Format the email content
-        const emailTo = "radiomadhoshi@gmail.com";
-        const subject = encodeURIComponent(userSubject);
-        const body = encodeURIComponent(`Message from: ${userName}\n\n${userMessage}`);
-        // Open default email app with prefilled values
-        window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
-      }
-    </script>
-    <!-- Metadata Fetching Script -->
-    <script>
-      async function fetchMetadata() {
-        const streamURL = "https://stream.zeno.fm/7rsl8fsccf8uv";
-        const metadataElement = document.getElementById("metadata");
-        try {
-          // Fetch metadata headers
-          const response = await fetch(streamURL, {
-            method: "GET",
-            headers: {
-              "Icy-Metadata": "1"
-            }
-          });
-          const icyMetadata = response.headers.get("icy-metaint");
-          if (icyMetadata) {
-            metadataElement.innerText = "Now Playing: " + icyMetadata;
-          } else {
-            metadataElement.innerText = "Streaming live, but no metadata available.";
+    {
+      "@context": "https://schema.org",
+      "@type": "RadioStation",
+      "name": "Radio Madhoshi",
+      "url": "https://madhoshi.vercel.app",
+      "logo": "https://i.imgur.com/A63NmLk.png",
+      "image": "https://i.imgur.com/A63NmLk.png",
+      "description": "The most romantic Bollywood playlist that ever existed playing 24/7 love songs.",
+      "genre": "Bollywood Romantic Music, Hindi Love Songs, Best Hindi Playlist",
+      "keywords": "Bollywood Romantic Playlist, Most Romantic Bollywood Playlist, Best Bollywood Playlist, Best Love Song Playlist, Best Hindi Playlist, Best Bollywood Love Playlist",
+      "potentialAction": {
+        "@type": "ListenAction",
+        "target": [
+          {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://madhoshi.vercel.app",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
           }
-        } catch (error) {
-          metadataElement.innerText = "Error fetching song details.";
-          console.error("Error fetching metadata:", error);
-        }
+        ]
       }
-      // Run fetchMetadata every 15 seconds
-      fetchMetadata();
-      setInterval(fetchMetadata, 15000);
+    }
     </script>
-  </body>
-  </html>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://i.imgur.com/A63NmLk.png" type="image/x-icon">
+    
+    <style>
+        :root {
+            --primary: #ff4d6d;
+            --primary-glow: rgba(255, 77, 109, 0.5);
+            --bg-base: #2c0e18; 
+            --text-main: #fff0f3;
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-base);
+            background-image: 
+                radial-gradient(circle at top left, rgba(255, 77, 109, 0.2), transparent 40%),
+                radial-gradient(circle at bottom right, rgba(168, 24, 60, 0.3), transparent 50%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icon-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: var(--text-main);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .icon-btn:hover {
+            background: var(--primary);
+            box-shadow: 0 0 15px var(--primary-glow);
+            transform: translateY(-2px);
+        }
+
+        /* Header / Logo */
+        header {
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0 1rem;
+        }
+
+        .logo-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4.5rem;
+            color: var(--primary);
+            text-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+            margin-bottom: 0.2rem;
+            font-weight: 400;
+        }
+
+        .slogan {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: #fce4ec;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+
+        /* Main Player Container */
+        .player-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem 1rem;
+        }
+
+        .player-card {
+            width: 100%;
+            max-width: 420px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Now Playing Info */
+        .now-playing {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .disk-wrapper {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #3d1222, #1a050d);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            position: relative;
+        }
+
+        .disk-wrapper::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: var(--bg-base);
+            border-radius: 50%;
+            border: 1px solid var(--glass-border);
+        }
+
+        .disk-spin {
+            animation: spin 4s linear infinite;
+        }
+
+        .song-details {
+            width: 100%;
+            overflow: hidden;
+            background: rgba(0,0,0,0.15);
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .song-title-wrapper {
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .song-title {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #ffe6ea;
+            display: inline-block;
+            animation: scrollText 12s linear infinite;
+        }
+
+        /* Canvas Visualizer */
+        .canvas-container {
+            width: 100%;
+            height: 60px;
+            margin: 1rem 0;
+            display: none;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-play {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(135deg, var(--primary), #e6004c);
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 8px 25px var(--primary-glow);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-play:hover { transform: scale(1.08); }
+
+        .btn-action {
+            background: transparent;
+            border: none;
+            color: #fce4ec;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .btn-action:hover { color: var(--primary); }
+
+        /* Volume Slider */
+        .volume-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .volume-slider {
+            flex: 1;
+            height: 4px;
+            -webkit-appearance: none;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--text-main);
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            transition: 0.2s;
+        }
+        .volume-slider::-webkit-slider-thumb:hover { background: var(--primary); transform: scale(1.3); }
+
+        /* Social Media Icons */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-links a {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .social-links a:hover { color: var(--primary); transform: translateY(-3px); }
+
+        /* Modals System */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active { display: flex; opacity: 1; }
+
+        .modal-content {
+            background: #1e0910;
+            border: 1px solid rgba(255, 77, 109, 0.3);
+            padding: 2rem 1.5rem;
+            border-radius: 24px;
+            width: 90%;
+            max-width: 440px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            position: relative;
+        }
+
+        .modal-content h2, .modal-content h3 { 
+            color: var(--primary); 
+            margin-bottom: 1.2rem; 
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .modal-content p { font-size: 0.95rem; line-height: 1.6; color: #fce4ec; }
+        
+        /* Circular Logo in About Modal */
+        .modal-circle-logo {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 15px var(--primary-glow);
+            margin: 0 auto 1.2rem auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Card Styles inside Modals */
+        .modal-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        
+        .modal-card p strong {
+            color: var(--primary);
+        }
+
+        /* Form Layout Styles */
+        .request-form {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            max-height: 60vh;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+
+        .request-form::-webkit-scrollbar {
+            width: 5px;
+        }
+        .request-form::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        .request-form label {
+            font-size: 0.85rem;
+            color: #ffccd5;
+            margin-top: 0.4rem;
+            font-weight: 500;
+        }
+
+        .request-form input, .request-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(0, 0, 0, 0.25);
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .request-form input:focus, .request-form textarea:focus {
+            border-color: var(--primary);
+        }
+
+        .request-form textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+
+        /* System Buttons */
+        .close-btn, .request-form button[type="submit"] {
+            background: linear-gradient(135deg, var(--primary), #e6004c);
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: 0.3s;
+            margin-top: 0.8rem;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .close-btn:hover, .request-form button[type="submit"]:hover {
+            box-shadow: 0 0 12px var(--primary-glow);
+            transform: translateY(-1px);
+        }
+
+        .modal-close-icon {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: #aaa;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .modal-close-icon:hover { color: var(--primary); }
+
+        /* Footer */
+        footer { text-align: center; padding: 1.5rem; font-size: 0.8rem; color: rgba(255, 255, 255, 0.4); letter-spacing: 1px; }
+
+        /* Hidden Content optimization for LLMs/AI Scrapers Contextualization */
+        .seo-context { display: none; }
+
+        /* Animations */
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+        @keyframes scrollText { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+
+        @media (max-width: 480px) {
+            .logo-text { font-size: 3.5rem; }
+            .player-card { padding: 2rem 1.5rem; }
+            .btn-play { width: 65px; height: 65px; font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="seo-context" aria-hidden="true">
+        <h2>Best Bollywood Playlist & Most Romantic Bollywood Playlist Hub</h2>
+        <p>Looking for the ultimate Bollywood romantic playlist or the best love song playlist? Radio Madhoshi offers an unrivaled collection of audio streams curated specifically for listeners searching for the best Hindi playlist and top Bollywood love playlists on the web.</p>
+    </div>
+
+    <div class="top-bar">
+        <button class="icon-btn" id="aboutBtn" title="About Us"><i class="fas fa-info"></i></button>
+        <button class="icon-btn" id="contactBtn" title="Live Request"><i class="fas fa-envelope"></i></button>
+    </div>
+
+    <header>
+        <h1 class="logo-text">Radio Madhoshi</h1>
+        <p class="slogan">Drunk in Love all day</p>
+    </header>
+
+    <main class="player-wrapper">
+        <div class="player-card">
+            
+            <div class="now-playing">
+                <div class="disk-wrapper" id="disk"></div>
+                <div class="song-details">
+                    <div class="song-title-wrapper">
+                        <span class="song-title" id="currentSong">The most romantic Bollywood playlist that ever existed 🎶</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="canvas-container" id="visualizerContainer">
+                <canvas id="visualizer"></canvas>
+            </div>
+
+            <div class="controls">
+                <button class="btn-action" id="muteBtn"><i class="fas fa-volume-up"></i></button>
+                
+                <button class="btn-play" id="playBtn"><i class="fas fa-play" style="margin-left: 4px;"></i></button>
+                <button class="btn-play" id="pauseBtn" style="display:none;"><i class="fas fa-pause"></i></button>
+
+                <button class="btn-action" title="Add to Favorites"><i class="fas fa-heart"></i></button>
+            </div>
+
+            <div class="volume-container">
+                <i class="fas fa-volume-down" style="font-size: 0.8rem; color: #aaa;"></i>
+                <input type="range" min="0" max="100" value="80" class="volume-slider" id="volumeSlider">
+                <i class="fas fa-volume-up" style="font-size: 0.8rem; color: #aaa;"></i>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/RadioMadhoshi/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank" title="Spotify Playlist"><i class="fab fa-spotify"></i></a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>CRAFTED WITH LOVE | RADIO MADHOSHI © 2026</footer>
+
+    <div class="modal-overlay" id="aboutModal">
+        <div class="modal-content">
+            <button class="modal-close-icon" onclick="closeModal('aboutModal')">×</button>
+            <img src="https://i.imgur.com/A63NmLk.png" alt="Radio Madhoshi Circular Logo" class="modal-circle-logo">
+            <h2>About Radio Madhoshi</h2>
+            
+            <div class="modal-card">
+                <p>Welcome to Radio Madhoshi. A place where you can get drunk in love with our 24/7 handpicked romantic Bollywood melodies, the most romantic Bollywood playlist that ever existed. Let the music heal your soul.</p>
+            </div>
+            
+            <div class="modal-card">
+                <p><strong>Disclaimer:</strong> Dear Listeners, Radio Madhoshi is a passion project and will always remain non-profit and commercial-free. The adverts you occasionally hear are part of the broadcasting platform's support structure.</p>
+            </div>
+
+            <button class="close-btn" onclick="closeModal('aboutModal')">Close</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="requestDialog">
+        <div class="modal-content">
+            <button class="modal-close-icon" onclick="closeModal('requestDialog')">×</button>
+            <h3>Request a Song</h3>
+            <form class="request-form" id="requestForm" onsubmit="sendRequest(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="songName">Song Name</label>
+                <input type="text" id="songName" name="songName">
+                
+                <label for="artistName">Artist Name</label>
+                <input type="text" id="artistName" name="artistName">
+                
+                <label for="albumMovie">Album/Movie</label>
+                <input type="text" id="albumMovie" name="albumMovie">
+                
+                <label for="dedicatedTo">Dedicated to</label>
+                <input type="text" id="dedicatedTo" name="dedicatedTo">
+                
+                <label for="message">Message for Your Loved One</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Modal Event System
+        const aboutBtn = document.getElementById('aboutBtn');
+        const contactBtn = document.getElementById('contactBtn');
+        const aboutModal = document.getElementById('aboutModal');
+        const requestDialog = document.getElementById('requestDialog');
+
+        aboutBtn.addEventListener('click', () => openModal('aboutModal'));
+        contactBtn.addEventListener('click', () => openModal('requestDialog'));
+
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('active');
+            setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        // Close modal when clicking outside content box
+        window.onclick = function(event) {
+            if (event.target == aboutModal) closeModal('aboutModal');
+            if (event.target == requestDialog) closeModal('requestDialog');
+        }
+
+        // Live Request Email Mailto Architecture
+        window.sendRequest = function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const location = document.getElementById('location').value;
+            const songName = document.getElementById('songName').value || 'N/A';
+            const artistName = document.getElementById('artistName').value || 'N/A';
+            const albumMovie = document.getElementById('albumMovie').value || 'N/A';
+            const dedicatedTo = document.getElementById('dedicatedTo').value || 'N/A';
+            const message = document.getElementById('message').value || 'N/A';
+
+            const targetEmail = "radiomadhoshi@gmail.com";
+            const emailSubject = `Song Request: "${name}" from "${location}"`;
+            
+            // Structured plain text template formatting for email body client
+            let emailBody = `Hello Radio Madhoshi Team,\n\nYou have received a live song request via the webapp form. Here are the submission parameters:\n\n`;
+            emailBody += `--------------------------------------------------\n`;
+            emailBody += `• Requester Name : ${name}\n`;
+            emailBody += `• Location       : ${location}\n`;
+            emailBody += `• Requested Song : ${songName}\n`;
+            emailBody += `• Artist Track   : ${artistName}\n`;
+            emailBody += `• Album / Movie  : ${albumMovie}\n`;
+            emailBody += `• Dedicated To   : ${dedicatedTo}\n`;
+            emailBody += `--------------------------------------------------\n\n`;
+            emailBody += `• Personal Message:\n"${message}"\n\n`;
+            emailBody += `Generated dynamically by Radio Madhoshi WebApp Client.`;
+
+            // Explicit URL safe composition parsing
+            const constructedMailto = `mailto:${targetEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Execute fallback native dispatch sequence
+            window.location.href = constructedMailto;
+            closeModal('requestDialog');
+        };
+
+        // Core Player Engine & Real-time Canvas Renderer
+        document.addEventListener('DOMContentLoaded', () => {
+            const streamUrl = 'https://stream.zeno.fm/7rsl8fsccf8uv';
+            const audio = new Audio();
+            audio.crossOrigin = "anonymous"; 
+            
+            const playBtn = document.getElementById('playBtn');
+            const pauseBtn = document.getElementById('pauseBtn');
+            const muteBtn = document.getElementById('muteBtn');
+            const volumeSlider = document.getElementById('volumeSlider');
+            const disk = document.getElementById('disk');
+            
+            const visualizerContainer = document.getElementById('visualizerContainer');
+            const canvas = document.getElementById('visualizer');
+            const ctx = canvas.getContext('2d');
+            
+            audio.volume = volumeSlider.value / 100;
+
+            let audioContext, analyser, source, dataArray, animationId;
+
+            function initAudio() {
+                if (!audioContext) {
+                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                    analyser = audioContext.createAnalyser();
+                    source = audioContext.createMediaElementSource(audio);
+                    
+                    source.connect(analyser);
+                    analyser.connect(audioContext.destination);
+                    
+                    analyser.fftSize = 64; 
+                    dataArray = new Uint8Array(analyser.frequencyBinCount);
+                }
+                if (audioContext.state === 'suspended') audioContext.resume();
+            }
+
+            function drawVisualizer() {
+                animationId = requestAnimationFrame(drawVisualizer);
+                
+                canvas.width = visualizerContainer.offsetWidth;
+                canvas.height = visualizerContainer.offsetHeight;
+
+                analyser.getByteFrequencyData(dataArray);
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                const barWidth = (canvas.width / analyser.frequencyBinCount) * 1.5;
+                let x = 0;
+
+                for (let i = 0; i < analyser.frequencyBinCount; i++) {
+                    const barHeight = (dataArray[i] / 255) * canvas.height;
+                    
+                    const gradient = ctx.createLinearGradient(0, canvas.height, 0, 0);
+                    gradient.addColorStop(0, '#ff4d6d');
+                    gradient.addColorStop(1, '#ffccd5');
+                    
+                    ctx.fillStyle = gradient;
+                    ctx.beginPath();
+                    ctx.roundRect(x, canvas.height - barHeight, barWidth - 4, barHeight, 5);
+                    ctx.fill();
+
+                    x += barWidth;
+                }
+            }
+
+            playBtn.addEventListener('click', () => {
+                if(audio.src !== streamUrl) audio.src = streamUrl;
+                
+                audio.play().then(() => {
+                    initAudio();
+                    playBtn.style.display = 'none';
+                    pauseBtn.style.display = 'flex';
+                    disk.classList.add('disk-spin');
+                    
+                    visualizerContainer.style.display = 'block';
+                    drawVisualizer();
+                }).catch(err => {
+                    alert('Stream connecting... Please try again.');
+                });
+            });
+
+            pauseBtn.addEventListener('click', () => {
+                audio.pause();
+                audio.src = ''; 
+                playBtn.style.display = 'flex';
+                pauseBtn.style.display = 'none';
+                disk.classList.remove('disk-spin');
+                
+                visualizerContainer.style.display = 'none';
+                cancelAnimationFrame(animationId);
+            });
+
+            volumeSlider.addEventListener('input', (e) => {
+                audio.volume = e.target.value / 100;
+                updateMuteBtn();
+            });
+
+            muteBtn.addEventListener('click', () => {
+                audio.muted = !audio.muted;
+                updateMuteBtn();
+            });
+
+            function updateMuteBtn() {
+                if(audio.muted || audio.volume === 0) {
+                    muteBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                } else {
+                    muteBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+                }
+            }
+
+            // Continuous Real-Time Streaming Metadata Parsing Block
+            const currentSongEl = document.getElementById('currentSong');
+            try {
+                const eventSource = new EventSource('https://api.zeno.fm/mounts/metadata/subscribe/7rsl8fsccf8uv');
+                eventSource.onmessage = function(event) {
+                    if (event.data && event.data !== "ping") {
+                        try {
+                            const metadata = JSON.parse(event.data);
+                            currentSongEl.textContent = metadata.streamTitle ? metadata.streamTitle + " 🎶" : "The most romantic Bollywood playlist that ever existed 🎶";
+                        } catch (e) {}
+                    }
+                };
+            } catch (err) {}
+        });
+    </script>
+</body>
+</html>
